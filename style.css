@@ -1,0 +1,94 @@
+HTML CSS JSResult Skip Results Iframe
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-black: #1B1B1B;
+    --white: #f8f8f8;
+    --headingFont: 115px;
+}
+h1{
+    font-size: var(--headingFont);
+    color: var(--white);
+    font-weight: 900;
+    line-height: 115px;
+}
+body{
+    font-family: 'llisarniq', sans-serif;
+    background: var(--bg-black);
+    overflow-x:hidden;
+}
+section{
+    padding: 150px 150px;
+    height: 100vh;
+}
+.hero-text {
+    height: 100vh;
+    /* border: 1px solid blue */
+}
+.hero-text p{
+    padding: 30px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--white);
+    font-size: 20px;
+    line-height: 2em;
+    letter-spacing: 0.1px;
+}
+.hero-text .bottom-text p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #838383;
+}
+section{
+    height: 120vh;
+}
+.heading{
+    text-transform: uppercase;
+}
+section .img{
+    position: absolute;
+    z-index: -3;
+    left: 0;
+    overflow: hidden;
+}
+.img img{
+    width: 850px;
+}
+.projects{
+    position: relative;
+}
+.circle{
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 70%;
+    right: 30%;
+    animation: rotate infinite 5s linear;
+    font-size: 20px;
+}
+.circle:hover .cursor{
+    width: 140px;
+    height: 140px;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
